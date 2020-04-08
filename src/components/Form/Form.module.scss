@@ -1,0 +1,20 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  width: 80vw;
+  max-width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  grid-template-columns: 1fr;
+
+  button {
+    margin-top: 16px;
+    height: min-content;
+  }
+}

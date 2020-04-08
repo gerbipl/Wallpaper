@@ -1,0 +1,18 @@
+.button {
+  display: block;
+  font-size: 13px;
+  text-decoration: none;
+  padding: 7px 12px;
+  font-weight: 700;
+  background: none;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.secondary {
+  @extend .button;
+  color: #313131;
+  border-color: #313131;
+  border-radius: unset;
+}
