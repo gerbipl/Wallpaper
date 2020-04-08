@@ -10,7 +10,7 @@ class FavoriteView extends React.Component {
 
   UNSAFE_componentWillMount = () => {
     this.setState({
-      favorites: JSON.parse(localStorage.getItem("wallpaper")),
+      favorites: JSON.parse(localStorage.getItem("wallpaper")) || [],
     });
   };
 

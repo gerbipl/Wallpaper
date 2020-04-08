@@ -12,7 +12,7 @@ class HomeView extends React.Component {
   };
 
   UNSAFE_componentWillMount = () => {
-    const favorites = JSON.parse(localStorage.getItem("wallpaper"));
+    const favorites = JSON.parse(localStorage.getItem("wallpaper")) || [];
     const favoritesIds = [];
 
     favorites.forEach((item) => {
@@ -128,12 +128,12 @@ class HomeView extends React.Component {
     return (
       <>
         <Form submitFn={this.searchWallpaper} />
-        <List
+        {/* <List
           items={this.state.wallpapers}
           favoritesIds={this.state.favoritesIds}
           downloadFn={this.downloadWallpaper}
           addFavoriteFn={this.addFavorite}
-        />
+        /> */}
       </>
     );
   }
