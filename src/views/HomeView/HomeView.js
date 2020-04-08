@@ -128,12 +128,12 @@ class HomeView extends React.Component {
     return (
       <>
         <Form submitFn={this.searchWallpaper} />
-        {/* <List
+        <List
           items={this.state.wallpapers}
           favoritesIds={this.state.favoritesIds}
           downloadFn={this.downloadWallpaper}
           addFavoriteFn={this.addFavorite}
-        /> */}
+        />
       </>
     );
   }
