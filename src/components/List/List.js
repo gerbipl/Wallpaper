@@ -12,7 +12,7 @@ const List = ({ items, ...props }) => (
         ))}
       </ul>
     ) : (
-      <Title>There`s nothing here jet, please add some item!</Title>
+      <Title>There`s nothing here yet, please add some item!</Title>
     )}
   </>
 );
